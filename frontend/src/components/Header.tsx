@@ -10,7 +10,7 @@ import MobileMenu from "./MobileMenu";
 import { useState } from "react";
 
 const Header = () => {
-  const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false);
   return (
     <header>
       <div className=" border  border-gray-200">
