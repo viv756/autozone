@@ -46,12 +46,22 @@ const Header = () => {
               <span className="italic font-bold text-2xl absolute sm:top-19 top-13">AutoZone</span>
             </div>
             <ul className=" gap-10 text-lg sm:inline-flex hidden">
-              <li>Home</li>
+              <li>
+                <Link to={"/"}>Home</Link>
+              </li>
               <li>Platform</li>
-              <li>News</li>
-              <li>Shop</li>
-              <li>Favorites</li>
-              <li>About us</li>
+              <li>
+                <Link to={"/posts"}>Blogs</Link>
+              </li>
+              <li>
+                <Link to={"/shop"}>Shop</Link>
+              </li>
+              <li>
+                <Link to={"/favorites"}>Favorites</Link>
+              </li>
+              <li>
+                <Link to={"/about-us"}>About us</Link>
+              </li>
             </ul>
           </div>
           <div className="flex pr-4 gap-5 items-center">
@@ -61,7 +71,7 @@ const Header = () => {
               <MdFavorite size={20} />
               <IoMdSearch size={20} />
               <button onClick={() => setShowMobileMenu(!showMobileMenu)} className="transition-all">
-                <GiHamburgerMenu  size={20} color="red" />
+                <GiHamburgerMenu size={20} color="red" />
               </button>
             </div>
             <Link
