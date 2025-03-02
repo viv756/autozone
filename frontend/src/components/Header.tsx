@@ -12,7 +12,7 @@ import { useState } from "react";
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false);
   return (
-    <header>
+    <header className="border border-gray-200 h-45">
       <div className=" border  border-gray-200">
         <div className="flex justify-between h-12 px-3  mx-auto max-w-350 border border-t-0 border-b-0 border-x-gray-200 ">
           <div className="flex  gap-2 sm:border sm:border-t-0 sm:border-b-0 sm:border-l-0 sm:border-r-gray-200 ">
@@ -76,7 +76,7 @@ const Header = () => {
             </div>
             <Link
               to="/shop"
-              className="bg-[#FF2A02] text-white px-6 py-2 rounded-md font-semibold text-lg sm:inline hidden">
+              className="bg-primary text-white px-6 py-2 rounded-md font-semibold text-lg sm:inline hidden">
               Buy Now
             </Link>
           </div>
