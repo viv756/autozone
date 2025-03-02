@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header>
       <div className=" border  border-gray-200">
-        <div className="flex justify-between h-12 px-3  mx-auto max-w-7xl border border-t-0 border-b-0 border-x-gray-200 ">
+        <div className="flex justify-between h-12 px-3  mx-auto max-w-350 border border-t-0 border-b-0 border-x-gray-200 ">
           <div className="flex  gap-2 sm:border sm:border-t-0 sm:border-b-0 sm:border-l-0 sm:border-r-gray-200 ">
             <div className="flex gap-2 items-center sm:border sm:border-t-0 sm:border-b-0 sm:border-l-0 sm:border-r-gray-200 p-3 text-gray-500">
               <MdPhoneEnabled />
@@ -38,7 +38,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="mx-auto max-w-7xl">
+      <div className="mx-auto max-w-350">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-40 ">
             <div className="flex flex-col relative pl-2 sm:pl-0">

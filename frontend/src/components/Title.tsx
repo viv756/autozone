@@ -8,8 +8,8 @@ type TitleProps = {
 
 const Title: React.FC<TitleProps> = ({ title, breadcrumbs = [], className = "" }) => {
   return (
-    <div className={`bg-gray-100 h-44 ${className}`}>
-      <div className="max-w-7xl mx-auto h-44 flex flex-col gap-2 justify-center">
+    <div className={`bg-gray-100 h-44 sm:px-4 px-2${className}`}>
+      <div className="max-w-350 mx-auto h-44 flex flex-col gap-2 justify-center">
         {/* Breadcrumbs */}
         <div className="flex gap-2 text-gray-600">
           {breadcrumbs.map((crumb, index) => (
