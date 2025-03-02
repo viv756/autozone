@@ -1,35 +1,42 @@
+import { FaRegUserCircle } from "react-icons/fa";
+import { TbPinFilled } from "react-icons/tb";
+import { MdOutlineCalendarMonth } from "react-icons/md";
+import { Link } from "react-router-dom";
+
 const BlogCard = () => {
   return (
-    <div className="max-w-230 h-auto px-2">
+    <div className="max-w-230 sm:h-218 h-190  sm:px-0 rounded-sm shadow-xl shadow-gray-200">
       <img src="blog1.jpg" alt="Blog Featured Image" className="mb-8" />
-      <div className="prose max-w-none">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed sit amet
-          feugiat eros, eget eleifend dolor. Proin maximus bibendum felis, id fermentum odio
-          vestibulum id. Sed ac ligula eget dolor consequat tincidunt. Nullam fringilla ipsum et ex
-          lacinia, at bibendum elit posuere. Aliquam eget leo nec nibh mollis consectetur.
+      <div className="prose max-w-none px-7">
+        <h1 className="text-3xl text-[#222222] font-semibold">
+          Understanding Car Insurance: What You Need to Know
+        </h1>
+        <div className="flex gap-6 mt-4">
+          <p className="text-gray-500 flex items-center gap-2">
+            <FaRegUserCircle /> sanjay meils
+          </p>
+          <p className="text-gray-500 flex items-center gap-2">
+            <TbPinFilled /> sanjay meils
+          </p>
+          <p className="text-gray-500 flex items-center gap-2">
+            <MdOutlineCalendarMonth /> sanjay meils
+          </p>
+        </div>
+        <p className="mt-9">
+          In a world where innovation knows no bounds, the automotive industry has undergone a
+          remarkable transformation in recent years. Electric vehicles (EVs) have emerged as the
+          future of transportation, and one fictitious company, Quantum Motors, is taking the
+          industry by storm with its latest creation: the Quantum Cruiser. The Quantum Cruiser
+          represents a bold step […]
         </p>
-        <p>
-          Suspendisse potenti. Mauris euismod, magna sit amet aliquam dapibus, ex sapien porta nisl,
-          vel auctor orci velit in risus. Fusce gravida bibendum dui, id volutpat felis dignissim a.
-          Duis sagittis, arcu ac convallis bibendum, neque dolor suscipit dolor, non malesuada magna
-          orci a mauris. Proin sollicitudin diam eu enim tincidunt dapibus. Aliquam pharetra purus
-          mauris, id lacinia mi malesuada ut. Integer dignissim, urna nec scelerisque feugiat, lacus
-          sapien tincidunt sem, sed luctus enim libero vel nunc. Vivamus ornare, felis quis feugiat
-          luctus, orci justo auctor urna, et elementum orci dolor ac ante. Ut varius sapien nec
-          fringilla sodales. Suspendisse lacinia, metus eu suscipit lobortis, enim sapien commodo
-          sapien, non facilisis urna elit eget elit.
-        </p>
-        <p>
-          Nulla facilisi. Sed venenatis pretium ante, sed tempor turpis sagittis ac. Pellentesque
-          habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer
-          vel diam arcu. Maecenas bibendum efficitur ex sit amet tristique. Nulla vel sapien
-          euismod, bibendum velit id, facilisis magna. Sed vestibulum nisi vitae justo congue, eu
-          bibendum augue interdum. Nam quis orci nec nulla posuere facilisis. Etiam feugiat ligula
-          quis est auctor, et sagittis orci elementum. Vestibulum ante ipsum primis in faucibus orci
-          luctus et ultrices posuere cubilia Curae; Sed gravida neque vel tellus volutpat, vel
-          laoreet lacus commodo. Vivamus quis enim leo.
-        </p>
+
+        <button className="mt-9">
+          <Link
+            to={"/"}
+            className="bg-[#FF2A02] text-white px-6 py-2 rounded-sm font-semibold text-lg">
+            Read More
+          </Link>
+        </button>
       </div>
     </div>
   );

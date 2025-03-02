@@ -28,7 +28,7 @@ const Header = () => {
           <div className="flex">
             <input
               type="text"
-              className="grow outline-none hidden sm:inline"
+              className="grow outline-none hidden sm:inline sm:border sm:border-t-0 sm:border-b-0  sm:border-x-gray-200 pl-2"
               placeholder="Search"
             />
             <Link to="/sign-in" className="grow p-4 sm:inline hidden">
